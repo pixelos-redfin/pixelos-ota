@@ -64,3 +64,14 @@ README.md
 4. If the device's currently installed build matches the source build of the delta, `update_engine` verifies and accepts it.
 5. The incremental delta (~50-200 MB) is downloaded and streamed directly to the inactive slot.
 6. If the incremental update fails at any point or does not apply to the device's current build, Updater cleanly falls back to downloading the full update package.
+
+## Changelog Policy & Formatting Style
+
+When publishing new updates, `API/updater/changelogs/{device}.md` must adhere to the following rules:
+
+1. **Latest Update Only**: The changelog feed must **only** contain the release notes for the new/latest build. Do not append or accumulate historical changelogs from previous releases.
+2. **Official Google Pixel Style**: Format the changelog matching official Pixel OTA release notes:
+   - Concise introduction: `"This update includes bug fixes and performance improvements for your Pixel device."`
+   - Grouped under clear functional categories in bold: `**Device Integrity & Security**`, `**System & Performance**`, `**Kernel & Battery**`, etc.
+   - Clean, consumer-facing bullet points focusing on user experience, stability, and compatibility improvements rather than commit hashes or internal debugging logs.
+
