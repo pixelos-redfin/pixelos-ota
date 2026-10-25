@@ -1,5 +1,12 @@
 # PixelOS 17.0 for Pixel 5 (redfin)
 
+### 2026-10-25 Hotfix (Play Integrity Device Verdict & Signature Spoofing)
+- Fixed Google Play Integrity to pass `MEETS_DEVICE_INTEGRITY` and `MEETS_BASIC_INTEGRITY`
+- Added framework ROM signature spoofing for package `android` to Google Play Services
+- Updated certified props to Google Pixel 10 Pro XL (`mustang`) Android 17 certified build
+- Streamlined DroidGuard key attestation stack interception
+- Non-incremental partial OTA (KernelSU-Next boot + system + system_ext) flashable via Updater & KernelSU
+
 ### 2026-10-25 Hotfix (Native Play Integrity Fix)
 - Built-in Certified Properties (`config_certifiedBuildProperties`) passing Device & Basic integrity out-of-the-box with zero root modules required
 - Revoked beta fingerprint guard in `PropImitationHooks` to automatically prevent blacklisted prints from breaking attestation
