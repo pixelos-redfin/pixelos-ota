@@ -1,10 +1,10 @@
 # PixelOS 17.0 for Pixel 5 (redfin)
 
-### 2026-10-25 Update (Delta OTA)
-- Integrated KernelSU-Next (origin/legacy branch for Linux 4.19)
+### 2026-10-25 Update (Incremental Delta OTA)
+- Integrated KernelSU-Next with SUSFS (`CONFIG_KSU=y`, `CONFIG_KSU_SUSFS=y`)
 - Fixed Play Integrity Certified Properties overlay error ("Downloaded package is invalid")
 - Play Integrity vbmeta digest: `85cc15ae0b4c49a7027cf5306d48d34749dc6ee4d026102c358d2e01805d9fd6`
-- Applied incremental delta update (13 MB)
+- Incremental delta update from `PixelOS_redfin-17.0-20261024-2237` (~80 MB)
 
 ### 2026-10-24 Update
 - Seamless Incremental and Full OTA Updates support via PixelOS Updater
