@@ -1,9 +1,10 @@
-This update includes stability improvements and bug fixes for your Pixel 5.
+This update includes security and device certification improvements for your Pixel 5.
 
-**System Update & Installation**
-* Fixed an issue that could cause an installation error when applying partial seamless system updates
+**Device Integrity & Attestation**
+* Fixed an issue where Google Play Integrity only reported `MEETS_BASIC_INTEGRITY` after installing a system update
+* Synchronized security patch levels across Google Play Store and hardware Keystore certificate chains for `MEETS_DEVICE_INTEGRITY` and `MEETS_STRONG_INTEGRITY`
+* Added automatic refresh of cached Google Play Store attestation keys on startup
+* Fixed hardware TEE Root of Trust (`verifiedBootKey`) verification when generating certificate chains
 
-**Device Integrity & Security**
-* Enabled native Google Play Integrity certification (`BASIC`, `DEVICE`, and `STRONG` hardware attestation) without requiring external root modules
-* Enforced release-signed Verified Boot and partition build status across all system partitions
-* Improved hardware TEE certificate chain signing and automatic Play Services attestation refresh
+**System & Boot Properties**
+* Standardized Verified Boot lock state and SELinux enforcing status across vendor and system boot properties
