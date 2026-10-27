@@ -1,10 +1,10 @@
-This update includes security and device certification improvements for your Pixel 5.
+This update moves your Pixel 5 to PixelOS release keys and adds support for a locked bootloader.
 
-**Device Integrity & Attestation**
-* Fixed an issue where Google Play Integrity only reported `MEETS_BASIC_INTEGRITY` after installing a system update
-* Synchronized security patch levels across Google Play Store and hardware Keystore certificate chains for `MEETS_DEVICE_INTEGRITY` and `MEETS_STRONG_INTEGRITY`
-* Added automatic refresh of cached Google Play Store attestation keys on startup
-* Fixed hardware TEE Root of Trust (`verifiedBootKey`) verification when generating certificate chains
+**Security**
+* System, apps and system modules are now signed with private PixelOS release keys instead of public test keys
+* Verified boot is enabled; the bootloader can be relocked with the PixelOS boot key (a yellow notice is shown at startup)
+* Removed experimental Play Integrity attestation workarounds; certified properties now come from upstream PixelOS
 
-**System & Boot Properties**
-* Standardized Verified Boot lock state and SELinux enforcing status across vendor and system boot properties
+**Installing**
+* Coming from an earlier build: install the factory image with `flash-all` (erases all data). Earlier builds use different keys and cannot update over the air.
+* The phone must run the latest stock Android 14 firmware (UP1A.231105.001.B2) before installing.

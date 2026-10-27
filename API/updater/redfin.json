@@ -1,18 +1,1 @@
-[
-  {
-    "datetime": 1792959610,
-    "files": [
-      {
-        "filename": "PixelOS_redfin-17.0-incremental-delta-playintegrity.zip",
-        "os_patch_level": "2026-10-01",
-        "os_sdk_level": 37,
-        "sha256": "cb5e7b2414586ef394de5566d72aed1e455cc75be21a79182f6f07a3718893e9",
-        "size": 11155384,
-        "url": "https://github.com/pixelos-redfin/pixelos-ota/releases/download/20261025-0443/PixelOS_redfin-17.0-incremental-delta-playintegrity.zip",
-        "ota_property_files": "payload_metadata.bin:4276:85384,payload.bin:4276:11147617,payload_properties.txt:11151951:153,apex_info.pb:2207:1716,care_map.pb:3970:259,metadata:69:768,metadata.pb:905:1254                    "
-      }
-    ],
-    "type": "ci",
-    "version": "17.0"
-  }
-]
+[]
