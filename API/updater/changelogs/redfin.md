@@ -1,10 +1,15 @@
 **Fixes**
-* Play Store now sees the real Pixel 5, so it installs app versions built for it. This fixes Google Camera crashing at launch with "Device is not recognized or not supported".
-* Silenced a harmless sensors SELinux denial in the logs
+* The PixelOS boot animation now also plays with dark theme on. Before, dark theme showed the stock "android" animation.
+
+**Improvements**
+* KernelSU now hooks the kernel directly instead of through kprobes. This removes overhead from system calls in apps, so the system should feel a little lighter.
+
+**Changes**
+* KernelSU's optional "adb root" toggle no longer works with the new hook method. Root, su, modules and the KernelSU manager work as before.
 
 **After updating**
-* If Google Camera crashes, uninstall it once and install it again from Play Store. Play Store does not replace the incompatible version that is already installed.
+* Open the KernelSU manager and check that it shows "Working".
 
 **Installing**
-* This is an incremental update from 20261027-1820.
-* Coming from a build before 20261027-1820: install the factory image with `flash-all` (erases all data).
+* This is an incremental update from 20261028-0515.
+* Coming from a build before 20261028-0515: install the factory image with `flash-all` (erases all data).
