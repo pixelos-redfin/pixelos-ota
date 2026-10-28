@@ -1,10 +1,10 @@
-This update moves your Pixel 5 to PixelOS release keys and adds support for a locked bootloader.
+**Fixes**
+* Play Store now sees the real Pixel 5, so it installs app versions built for it. This fixes Google Camera crashing at launch with "Device is not recognized or not supported".
+* Silenced a harmless sensors SELinux denial in the logs
 
-**Security**
-* System, apps and system modules are now signed with private PixelOS release keys instead of public test keys
-* Verified boot is enabled; the bootloader can be relocked with the PixelOS boot key (a yellow notice is shown at startup)
-* Removed experimental Play Integrity attestation workarounds; certified properties now come from upstream PixelOS
+**After updating**
+* If Google Camera crashes, uninstall it once and install it again from Play Store. Play Store does not replace the incompatible version that is already installed.
 
 **Installing**
-* Coming from an earlier build: install the factory image with `flash-all` (erases all data). Earlier builds use different keys and cannot update over the air.
-* The phone must run the latest stock Android 14 firmware (UP1A.231105.001.B2) before installing.
+* This is an incremental update from 20261027-1820.
+* Coming from a build before 20261027-1820: install the factory image with `flash-all` (erases all data).
