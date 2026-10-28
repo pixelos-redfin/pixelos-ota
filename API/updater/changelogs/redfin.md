@@ -1,18 +1,13 @@
 **Fixes**
-* The PixelOS boot animation now also plays with dark theme on. Before, dark theme showed the stock "android" animation.
-* Wakeups from voice hotword detection are now counted in wakeup statistics, which helps track down battery drain.
-* Fixed a repeating SELinux error when the system UI checks for Bluetooth Find My Device support.
+* Play Integrity props that you paste in Developer options in the PlayIntegrityFix format now work. The security patch date, first SDK level, release and incremental version are applied, and option keys like spoofBuild no longer fill the logs with errors.
+* Fixed a rare crash of Google Play services' integrity check when the props were read twice in one process.
 
-**Improvements**
-* KernelSU now hooks the kernel directly instead of through kprobes. This removes overhead from system calls in apps, so the system should feel a little lighter.
+**Unchanged**
+* Play Integrity with the built-in PixelOS props works as before (BASIC).
 
-**Changes**
-* The Updater icon is removed from the app drawer. Updates are still in Settings > System > System updates and in notifications.
-* KernelSU's optional "adb root" toggle no longer works with the new hook method. Root, su, modules and the KernelSU manager work as before.
-
-**After updating**
-* Open the KernelSU manager and check that it shows "Working".
+**KernelSU-Next**
+* If the KernelSU-Next manager says "manager version 5 is too low", install the newer manager v3.4.2-50 (official KernelSU-Next test build): https://drive.google.com/open?id=1h6c2AN_bQN5-KHHIXV5I8mcIezCqLW0Q Root keeps working either way.
 
 **Installing**
-* This is an incremental update from 20261028-0515.
-* Coming from a build before 20261028-0515: install the factory image with `flash-all` (erases all data).
+* This is an incremental update from 20261028-1500.
+* Coming from a build before 20261028-1500: install the factory image with `flash-all` (erases all data).
