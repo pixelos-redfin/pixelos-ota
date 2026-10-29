@@ -1,15 +1,15 @@
 [
   {
-    "datetime": 1793215192,
+    "datetime": 1793273477,
     "files": [
       {
-        "filename": "PixelOS_redfin-17.0-20261028-1746-to-20261028-1919-incremental.zip",
+        "filename": "PixelOS_redfin-17.0-20261028-1919-to-20261029-1131-incremental.zip",
         "os_patch_level": "2026-10-01",
         "os_sdk_level": 37,
-        "sha256": "3d3502d2dc8a6b34837855afd021d2150c9757f82854e5b59cf0abfa5ca2fa33",
-        "size": 2337465,
-        "url": "https://github.com/pixelos-redfin/pixelos-ota/releases/download/20261028-1919/PixelOS_redfin-17.0-20261028-1746-to-20261028-1919-incremental.zip",
-        "ota_property_files": "payload_metadata.bin:4914:272732,payload.bin:4914:2329184,payload_properties.txt:2334156:153,apex_info.pb:2599:1716,care_map.pb:4362:505,metadata:69:761,metadata.pb:898:1653                  "
+        "sha256": "30f6732f2a6e72edfcc2ce862ec590eee1c065fc0415add8f0ffc343621c2252",
+        "size": 11816414,
+        "url": "https://github.com/pixelos-redfin/pixelos-ota/releases/download/20261029-1131/PixelOS_redfin-17.0-20261028-1919-to-20261029-1131-incremental.zip",
+        "ota_property_files": "payload_metadata.bin:4930:317135,payload.bin:4930:11808116,payload_properties.txt:11813104:154,apex_info.pb:2615:1716,care_map.pb:4378:505,metadata:69:769,metadata.pb:906:1661                    "
       }
     ],
     "type": "ci",
